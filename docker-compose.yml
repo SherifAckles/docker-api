@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  db:
+    image: 'postgres:12'
+    environment:
+      - postgres_DB=db
+      - postgres_USER=user
+      - postgres_PASSWORD=password
+    ports:
+      - '5432:5432'
